@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>~*~*~ Welcome to My Awesome Site ~*~*~</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #000000 url('https://web.archive.org/web/20091027130429/http://es.geocities.com/k_billie/_themes/stars/starsani.gif');
+            font-family: "Comic Sans MS", cursive;
+            color: #ff00ff;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 5px solid #00ff00;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .welcome {
+            font-size: 48px;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 3s linear infinite;
+        }
+        @keyframes rainbow {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .construction-text {
+            font-size: 32px;
+            text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+            animation: constructionAnim 2s infinite;
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            background: repeating-linear-gradient(
+                45deg,
+                #000 0px,
+                #000 10px,
+                #ffff00 10px,
+                #ffff00 20px
+            );
+        }
+        @keyframes constructionAnim {
+            0% { transform: scale(1) rotate(0deg); text-shadow: 2px 2px #ff0000, -2px -2px #00ff00; }
+            25% { transform: scale(1.1) rotate(-2deg); text-shadow: -2px 2px #00ff00, 2px -2px #ff0000; }
+            50% { transform: scale(1) rotate(0deg); text-shadow: -2px -2px #ff0000, 2px 2px #00ff00; }
+            75% { transform: scale(1.1) rotate(2deg); text-shadow: 2px -2px #00ff00, -2px 2px #ff0000; }
+            100% { transform: scale(1) rotate(0deg); text-shadow: 2px 2px #ff0000, -2px -2px #00ff00; }
+        }
+        .tools {
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            animation: rotateTool 3s linear infinite;
+        }
+        .tools-left {
+            left: -30px;
+        }
+        .tools-right {
+            right: -30px;
+            animation-direction: reverse;
+        }
+        @keyframes rotateTool {
+            from { transform: translateY(-50%) rotate(0deg); }
+            to { transform: translateY(-50%) rotate(360deg); }
+        }
+        .marquee {
+            background: #000;
+            padding: 10px;
+            color: #00ff00;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .button {
+            background: linear-gradient(to bottom, #ff00ff, #800080);
+            border: 3px outset #ff00ff;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+        }
+        .counter {
+            font-family: "Courier New", monospace;
+            background: #000;
+            padding: 5px;
+            border: 2px inset #808080;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome">Welcome to My Radical Website!</h1>
+        
+        <div class="marquee">
+            ★·.·´¯`·.·★ Welcome to my awesome website! No boring bouncing balls here! ★·.·´¯`·.·★
+        </div>
+
+        <img src="https://web.archive.org/web/20091027130429/http://es.geocities.com/k_billie/ie_logo.gif" alt="Best viewed in IE" width="88" height="31">
+        <img src="https://web.archive.org/web/20091027130429/http://es.geocities.com/k_billie/construction.gif" alt="Under Construction" width="100">
+        
+        <h2 class="construction-text">
+            <span class="tools tools-left">🔧</span>
+            ⚡ UNDER CONSTRUCTION ⚡
+            <span class="tools tools-right">🔨</span>
+        </h2>
+        
+        <p style="color: #00ff00;">You are visitor number:</p>
+        <div class="counter">0001337</div>
+        
+        <div style="margin: 20px;">
+            <a href="#" class="button">📖 Sign My Guestbook!</a>
+            <a href="#" class="button">✉️ Email Me!</a>
+        </div>
+        
+        <p style="color: yellow;">
+            <blink>★</blink> Last updated: March 21, 2024 <blink>★</blink>
+        </p>
+        
+        <div style="margin-top: 20px;">
+            <img src="https://web.archive.org/web/20091027130429/http://es.geocities.com/k_billie/rainbow.gif" alt="Rainbow line" width="400">
+        </div>
+    </div>
+</body>
+</html> 
